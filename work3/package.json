@@ -1,0 +1,17 @@
+{
+  "name": "work2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch styles/main.sass:./index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
+  }
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>TODO list</title>
+</head>
+
+
+<body>
+
+    <header>
+         <div>
+             <img src="images/TODO.png" alt="TODO">
+         </div>
+    </header>
+
+    <main>
+        <section class="add">
+            <form>
+                <div class="add__input">
+                    <label>
+                        <input id="message" type="text" placeholder="Что Вам нужно сделать?">
+                    </label>
+
+                    <button id="add_button" type="button">
+                        Добавить
+                    </button>
+                </div>
+
+                <p id="error"></p>
+
+                <div class="add__checkbox">
+                    <label>
+                        Важная задача
+                        <input id="importance" type="checkbox">
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="sort">
+            <label for="mySelect">Отсортировать:</label>
+            <select id="mySelect">
+                <option value="value1">Сначала новые</option>
+                <option value="value2">Сначала старые</option>
+                <option value="value3">Сначала выполненные</option>
+                <option value="value4">Сначала невыполненные</option>
+            </select>
+        </section>
+
+        <section id="item_list" class="list">
+<!--            <div id="list__example">-->
+<!--                <button class="star"></button>-->
+<!--                <button class="check"></button>-->
+<!--                <div>Task</div>-->
+<!--                <button class="delete"></button>-->
+<!--            </div>-->
+        </section>
+
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+</html>

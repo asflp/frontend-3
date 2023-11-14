@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAEEF3;
+}
+header img {
+  height: 90px;
+  width: auto;
+}
+
+main {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  padding: 40px 130px;
+}
+main .add {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+main .add__input {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  gap: 30px;
+}
+main .add__input label {
+  width: inherit;
+}
+main .add__input input {
+  width: 100%;
+  background-color: #FAEEF3;
+  border-radius: 50px;
+  border: none;
+  height: auto;
+  box-sizing: border-box;
+  padding: 25px 35px 20px;
+  cursor: pointer;
+}
+main .add__input input::placeholder {
+  color: #969696;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 500;
+}
+main .add__input button {
+  width: auto;
+  background-color: #FAEEF3;
+  border-radius: 50px;
+  border: none;
+  color: #7c043d;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 35px 20px;
+  cursor: pointer;
+}
+main .add p {
+  margin: 3px 0 0 45px;
+  color: red;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+}
+main .add__checkbox {
+  display: flex;
+  margin: 5px 0;
+  justify-content: end;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7c043d;
+}
+main .add__checkbox label {
+  display: flex;
+  align-items: center;
+}
+main .list {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAEEF3;
+  border-radius: 50px;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+main .list div {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: end;
+}
+main .list div div {
+  padding: 10px 20px;
+  width: calc(100vw - 475px);
+  height: auto;
+  justify-content: start;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+}
+main .star {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  background-image: url("/images/star.svg");
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+}
+main .empty-check {
+  height: 40px;
+  width: 40px;
+  background-image: url("/images/empty-check.svg");
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .check {
+  height: 40px;
+  width: 40px;
+  background-image: url("/images/check.svg");
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .delete {
+  height: 35px;
+  width: 35px;
+  background-image: url("/images/delete.svg");
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.done {
+  color: #bbbbbb;
+  text-decoration: line-through;
+  text-decoration-color: #bbbbbb;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  padding: 15px;
+  gap: 20px;
+  align-items: center;
+}
+.sort label {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sort select {
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: solid 1px #969696;
+  cursor: pointer;
+}
+.sort select option {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=index.css.map */

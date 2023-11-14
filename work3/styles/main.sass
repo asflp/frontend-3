@@ -1,0 +1,167 @@
+@import "fonts"
+@import "colors"
+
+body
+  margin: 0
+
+header
+  display: flex
+  width: 100%
+  height: auto
+  padding: 20px 0 10px
+  align-items: center
+  justify-content: center
+  background-color: $pink
+
+  img
+    height: 90px
+    width: auto
+
+main
+  display: flex
+  height: auto
+  flex-direction: column
+  padding: 40px 130px
+
+  .add
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: auto
+
+    &__input
+      display: flex
+      width: 100%
+      height: auto
+      justify-content: space-between
+      gap: 30px
+
+      label
+        width: inherit
+
+      input
+        width: 100%
+        background-color: $pink
+        border-radius: 50px
+        border: none
+        height: auto
+        box-sizing: border-box
+        padding: 25px 35px 20px
+        cursor: pointer
+
+      input::placeholder
+        color: $grey
+        @include font-master(22px, 500)
+
+      button
+        width: auto
+        background-color: $pink
+        border-radius: 50px
+        border: none
+        color: $dark-pink
+        @include font-master(20px, 500)
+        padding: 20px 35px 20px
+        cursor: pointer
+
+    p
+      margin: 3px 0 0 45px
+      color: red
+      @include font-master(12px, 400)
+
+    &__checkbox
+      display: flex
+      margin: 5px 0
+      justify-content: end
+      @include font-master(16px, 500)
+      color: $dark-pink
+
+      label
+        display: flex
+        align-items: center
+
+  .list
+    display: flex
+    flex-direction: column
+    background-color: $pink
+    border-radius: 50px
+    margin: 20px 0
+    padding: 20px 0
+
+    div
+      display: flex
+      height: auto
+      flex-direction: row
+      align-items: center
+      padding: 10px 30px
+      justify-content: end
+
+      div
+        padding: 10px 20px
+        width: calc(100vw - 475px)
+        height: auto
+        justify-content: start
+        font-family: Inter, sans-serif
+        font-style: normal
+
+  .star
+    height: 15px
+    width: 15px
+    margin-right: 10px
+    background-image: url("/images/star.svg")
+    background-size: cover
+    border: none
+    background-color: transparent
+
+  .empty-check
+    height: 40px
+    width: 40px
+    background-image: url("/images/empty-check.svg")
+    background-size: cover
+    border: none
+    background-color: transparent
+    cursor: pointer
+
+  .check
+    height: 40px
+    width: 40px
+    background-image: url("/images/check.svg")
+    background-size: cover
+    border: none
+    background-color: transparent
+    cursor: pointer
+
+  .delete
+    height: 35px
+    width: 35px
+    background-image: url("/images/delete.svg")
+    background-size: cover
+    border: none
+    background-color: transparent
+    cursor: pointer
+
+.done
+  color: #bbbbbb
+  text-decoration: line-through
+  text-decoration-color: #bbbbbb
+
+.sort
+  display: flex
+  flex-direction: row
+  justify-content: center
+  justify-items: center
+  padding: 15px
+  gap: 20px
+  align-items: center
+
+  label
+    @include font-master(18px, 500)
+
+  select
+    width: 200px
+    height: 40px
+    border-radius: 15px
+    border: solid 1px #969696
+    cursor: pointer
+
+    option
+      @include font-master(15px, 400)
