@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch styles/main.sass:./index.css"
+    "watch": "sass --watch styles/main.sass:./index.css",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon ./typescript/app.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.68.0"
+    "@types/node": "^20.9.0",
+    "nodemon": "^3.0.1",
+    "sass": "^1.68.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "save-dev": "^0.0.1-security"
